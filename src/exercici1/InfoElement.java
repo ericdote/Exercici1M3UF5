@@ -53,4 +53,12 @@ public class InfoElement {
         return nomMetodes;
     }   
     
+    public int[] modAtribut(){
+        int[] nomMetodes = new int[arrayMetodes().length];
+        Method[] meth = arrayMetodes();
+        for (int i = 0; i < nomMetodes.length; i++) {
+            nomMetodes[i] = meth[i].getModifiers();
+        }
+        return nomMetodes;
+    }    
 }
