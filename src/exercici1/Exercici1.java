@@ -7,13 +7,13 @@ public class Exercici1 {
         InfoElement info = new InfoElement(e);
         
         
-        System.out.println("1. nom de la superclasse: " + info.nomSuperClase());
-        System.out.println("2. nom de la classe complet: " + info.nomClaseComplet());
-        System.out.println("3. només el nom de la classe: " + info.nomesNomClase());
-        System.out.println("4. array d'atributs (Field): " + info.arrayAtributs());
-        System.out.println("5. array de mètodes (Method): " + info.arrayMetodes());
-        System.out.println("6. array dels noms dels atributs: " + info.arrayNomAtributs());
-        System.out.println("7. array dels noms dels mètodes: " + info.nomMetodes());
+        System.out.println(info.nomSuperClase());
+        System.out.println(info.nomClaseComplet());
+        System.out.println(info.nomesNomClase());
+        System.out.println(info.arrayAtributs());
+        System.out.println(info.arrayMetodes());
+        System.out.println(info.arrayNomAtributs());
+        System.out.println(info.nomMetodes());
     }
     
 }

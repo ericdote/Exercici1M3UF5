@@ -76,11 +76,13 @@ public class InfoElement {
     }
     
     public void executarMetode(){
-        e.getCad(); //???
+        e.getCad();
     }
     
-    //TODO crear Instancia
-
+    public void instanciaElement(){
+        Element element = new Element(1, "1");
+    }
+    
     @Override
     public Element clone() throws CloneNotSupportedException {
         return new Element(e.getNum(), e.getCad());
