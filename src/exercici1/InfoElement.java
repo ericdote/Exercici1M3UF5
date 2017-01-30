@@ -71,8 +71,9 @@ public class InfoElement {
         return modModificador;
     }
 
-    public void modificadorValAtr() {
-        //TODO
+    public void modificarAttr(Field atribut, Object nouValor) throws IllegalArgumentException, IllegalAccessException{
+        atribut.setAccessible(true);
+        atribut.set(e, nouValor);
     }
     
     public void executarMetode(){
